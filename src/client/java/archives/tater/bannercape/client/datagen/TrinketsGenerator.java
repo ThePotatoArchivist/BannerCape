@@ -18,7 +18,6 @@ public class TrinketsGenerator extends TrinketsDataProvider {
         output.entitySlots("cape")
                 .addSlot(DefaultTrinketSlots.CHEST_CAPE)
                 .addPlayer();
-        output.
     }
 
     @Override

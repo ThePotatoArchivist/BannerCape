@@ -1,5 +1,6 @@
 package archives.tater.bannercape.client;
 
+import archives.tater.bannercape.client.datagen.ItemTagGenerator;
 import archives.tater.bannercape.client.datagen.TrinketsGenerator;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -10,5 +11,6 @@ public class BannerCapeDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		var pack = fabricDataGenerator.createPack();
 		pack.addProvider(TrinketsGenerator::new);
+		pack.addProvider(ItemTagGenerator::new);
 	}
 }
