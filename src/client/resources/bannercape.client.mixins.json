@@ -3,7 +3,7 @@
 	"package": "archives.tater.bannercape.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"ExampleClientMixin"
+      "AvatarRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
