@@ -2,6 +2,7 @@ package archives.tater.bannercape.client.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.entity.EntityTypes;
 
 import eu.pb4.trinkets.api.DefaultTrinketSlots;
 import eu.pb4.trinkets.api.datagen.TrinketsDataProvider;
@@ -17,7 +18,8 @@ public class TrinketsGenerator extends TrinketsDataProvider {
     protected void generate(TrinketsOutput output) {
         output.entitySlots("cape")
                 .addSlot(DefaultTrinketSlots.CHEST_CAPE)
-                .addPlayer();
+                .addPlayer()
+                .addEntity(EntityTypes.MANNEQUIN);
     }
 
     @Override
