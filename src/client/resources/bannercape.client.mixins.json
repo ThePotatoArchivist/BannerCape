@@ -1,14 +1,18 @@
 {
-	"required": true,
-	"package": "archives.tater.bannercape.client.mixin",
-	"compatibilityLevel": "JAVA_25",
-	"client": [
-      "AvatarRendererMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "archives.tater.bannercape.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "AvatarRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixins": [
+    "BannerRendererAccessor",
+    "EntityRenderDispatcherMixin"
+  ]
 }
